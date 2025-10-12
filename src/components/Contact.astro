@@ -1,0 +1,68 @@
+---
+ // Contact section component
+---
+
+<section id="contact" class="py-20 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div class="space-y-6">
+        <h3 class="text-4xl font-bold text-yellow-400">Contactame</h3>
+        <p class="text-gray-300 text-lg leading-relaxed">
+          Me entusiasma la oportunidad de asumir nuevos desafíos y aportar mi
+          experiencia como desarrollador. Listo para trabajar y abierto a nuevas
+          oportunidades, quedo atento a tu contacto.
+        </p>
+      </div>
+
+      <form
+        action="https://formspree.io/f/mkgqqlbp"
+        method="POST"
+        class="space-y-6"
+      >
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="name" class="block text-white mb-2 text-sm">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Tim Berners-Lee..."
+              required
+              class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#a8ff60] transition-colors"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-white mb-2 text-sm">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="timb@email.com"
+              required
+              class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#a8ff60] transition-colors"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="message" class="block text-white mb-2 text-sm">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="I'm interested in working with you..."
+            required
+            class="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#a8ff60] transition-colors resize-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="px-8 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-[#1a1a1a] transition-all duration-300 font-medium"
+        >
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

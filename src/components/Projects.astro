@@ -1,0 +1,127 @@
+---
+import JavaIcon from "./icons/Java.astro";
+import JavaScriptIcon from "./icons/JavaScript.astro";
+import PythonIcon from "./icons/Python.astro";
+import TailwindIcon from "./icons/Tailwind.astro";
+import ReactIcon from "./icons/React.astro";
+import Link from "./icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+import GitHub from "./icons/Github.astro";
+
+const TAGS = {
+  JAVA: {
+    name: "Java",
+    class: "bg-red-500 text-white",
+    icon: JavaIcon,
+  },
+
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-yellow-400 text-black",
+    icon: JavaScriptIcon,
+  },
+
+  PYTHON: {
+    name: "Python",
+    class: "bg-blue-500 text-yellow-200",
+    icon: PythonIcon,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-white text-[#003159]",
+    icon: TailwindIcon,
+  },
+
+  REACT: {
+    name: "React",
+    class: "bg-gray-900 text-sky-400",
+    icon: ReactIcon,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: "CodeDev - Plataforma de aprendizaje competitivo",
+    description:
+      "Un espacio donde los programadores potencian sus habilidades resolviendo retos de programación de forma dinámica y motivadora.",
+    github: "https://github.com/AndresGoGutierrez/CodeDev-judge",
+    link: "https://github.com/AndresGoGutierrez/CodeDev-judge",
+    image: "https://i.ibb.co/ZPPdhsP/project-art-gallery.webp",
+    tags: [TAGS.PYTHON, TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.REACT],
+  },
+  {
+    title: "WanArt - Galería de arte digital",
+    description:
+      "Plataforma que facilita la gestión de artistas y obras, ofreciendo una administración moderna y organizada para galerías de arte.",
+    github: "https://github.com/AndresGoGutierrez/Art-Gallery",
+    link: "https://github.com/AndresGoGutierrez/Art-Gallery",
+    image: "https://i.ibb.co/yF616M62/project-Code-Dev.webp",
+    tags: [TAGS.JAVA, TAGS.JAVASCRIPT, TAGS.TAILWIND],
+  },
+  {
+    title: "RepliKa - Sistema PQRS",
+    description:
+      "Aplicación web para gestionar PQRS, facilitando el registro, seguimiento y resolución de solicitudes de forma rápida y transparente.",
+    github: "https://github.com/AndresGoGutierrez/Sistema-PQRS-Microservice",
+    link: "https://github.com/AndresGoGutierrez/Sistema-PQRS-Microservice",
+    image: "https://i.ibb.co/FLmVfWzg/project-repli-Ka.webp",
+    tags: [TAGS.JAVASCRIPT, TAGS.TAILWIND],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img
+              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <div class="mt-2 text-gray-700 dark:text-gray-400">
+              {description}
+            </div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github && (
+                <LinkButton href={github}>
+                  <GitHub class="size-6" />
+                  Code
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</div>

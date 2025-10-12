@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador Web y de Aplicaciones (Proyectos Personales)",
+    company: "Proyectos independientes",
+    description:
+      "Actualmente desarrollo proyectos personales en web y aplicaciones, trabajando en el diseño, programación, gestión de bases de datos y despliegue en servidores y entornos cloud, lo que me ha permitido fortalecer mis habilidades técnicas y de resolución de problemas.",
+  },
+  {
+    date: "Julio 2022",
+    title: "Técnico en telecomunicaciones",
+    company: "Axsatel telecomunicaciones",
+    description:
+      "Realicé la instalación, configuración y mantenimiento de redes de datos, asegurando la conectividad y el funcionamiento de routers, switches y sistemas de telefonía IP. Participé en la implementación de cableado estructurado y en la configuración de enlaces de transmisión, garantizando un rendimiento óptimo. Además, brindé soporte técnico en hardware, software y conectividad, resolviendo incidencias y colaborando en proyectos de mejora en telecomunicaciones.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

@@ -1,0 +1,539 @@
+---
+import JavaScriptIcon from "../components/icons/JavaScript.astro";
+import TypescriptIcon from "./icons/TypeScript.astro";
+import CsharpIcon from "./icons/Csharp.astro";
+import PythonIcon from "./icons/Python.astro";
+import CssIcon from "./icons/Css.astro";
+import HtmlIcon from "./icons/Html.astro";
+import JavaIcon from "./icons/Java.astro";
+import SqlIcon from "./icons/Sql.astro";
+import ReactIcon from "./icons/React.astro";
+import TailwindIcon from "./icons/Tailwind.astro";
+import ViteIcon from "./icons/Vite.astro";
+import BoostrapIcon from "./icons/Boostrap.astro";
+import SpringBootIcon from "./icons/SpringBoot.astro";
+import FastApiIcon from "./icons/FastApi.astro";
+import FlaskIcon from "./icons/Flask.astro";
+import NodeJsIcon from "./icons/NodeJs.astro";
+import SwaggerIcon from "./icons/Swagger.astro";
+import PostgreSQLIcon from "./icons/PostgreSQL.astro";
+import MongoIcon from "./icons/Mongo.astro";
+import MySqlIcon from "./icons/MySql.astro";
+import DockerIcon from "./icons/Docker.astro";
+import SupabaseIcon from "./icons/Supabase.astro";
+import AzureIcon from "./icons/Azure.astro";
+import GitActionsIcon from "./icons/GitActions.astro";
+import GrafanaIcon from "./icons/Grafana.astro";
+import PostmanIcon from "./icons/Postman.astro";
+import GithubIcon from "./icons/Github.astro";
+import IntellijIdeaIcon from "./icons/Intellij.astro";
+import PycharmIcon from "./icons/Pycharm.astro";
+import VisualStudioIcon from "./icons/VisualStudio.astro";
+import GitIcon from "./icons/Git.astro";
+import VirtualBoxIcon from "./icons/VirtualBox.astro";
+---
+
+<section class="w-full py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+        Conjunto de <span class="text-yellow-400 font-semibold"
+          >tecnologías</span
+        > que conforman mi stack de desarrollo, orientado a crear soluciones adaptadas
+        a cada necesidad.
+      </p>
+    </div>
+
+    <div
+      class="flex flex-col lg:flex-row gap-8 items-center lg:items-start justify-center lg:justify-between"
+    >
+      <div
+        class="flex flex-row lg:flex-col gap-3 flex-wrap lg:flex-nowrap justify-center lg:justify-start"
+      >
+        <button
+          class="category-btn px-6 py-3 rounded-full text-base font-medium transition-all duration-300 whitespace-nowrap"
+          data-category="server-side"
+        >
+          Server-side
+        </button>
+        <button
+          class="category-btn px-6 py-3 rounded-full text-base font-medium transition-all duration-300 whitespace-nowrap"
+          data-category="client-side"
+        >
+          Client-side
+        </button>
+        <button
+          class="category-btn px-6 py-3 rounded-full text-base font-medium transition-all duration-300 whitespace-nowrap active"
+          data-category="languages"
+        >
+          Languages
+        </button>
+        <button
+          class="category-btn px-6 py-3 rounded-full text-base font-medium transition-all duration-300 whitespace-nowrap"
+          data-category="databases"
+        >
+          Databases
+        </button>
+        <button
+          class="category-btn px-6 py-3 rounded-full text-base font-medium transition-all duration-300 whitespace-nowrap"
+          data-category="cloud-devops"
+        >
+          Cloud & DevOps
+        </button>
+        <button
+          class="category-btn px-6 py-3 rounded-full text-base font-medium transition-all duration-300 whitespace-nowrap"
+          data-category="tools-ides"
+        >
+          Tools & IDEs
+        </button>
+      </div>
+
+      <div
+        class="flex justify-center flex-1 bg-[rgba(51,65,85,0.15)] rounded-3xl p-8 backdrop-blur-sm"
+      >
+        <div
+          id="tech-grid"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+        >
+          <!-- --------------------------------------------------------------------- Server side ---------------------------------------------------------------------------->
+          <div class="tech-card hidden" data-category="server-side">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <SpringBootIcon class="w-full h-full text-lime-600" />
+              </div>
+              <span class="text-sm font-medium text-white whitespace-nowrap"
+                >Spring Boot</span
+              >
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="server-side">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <FastApiIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white whitespace-nowrap"
+                >Fast Api</span
+              >
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="server-side">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <FlaskIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Flask</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="server-side">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <NodeJsIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white whitespace-nowrap"
+                >NodeJs</span
+              >
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="server-side">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <SwaggerIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white whitespace-nowrap"
+                >Swagger</span
+              >
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------------------------- Client side ---------------------------------------------------------------------------->
+
+          <div class="tech-card hidden" data-category="client-side">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <ReactIcon class="w-full h-full text-sky-400" />
+              </div>
+              <span class="text-sm font-medium text-white">React</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="client-side">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <ViteIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Vite</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="client-side">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <TailwindIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Tailwind</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="client-side">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <BoostrapIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Boostrap</span>
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------------------------- languages ---------------------------------------------------------------------------->
+
+          <div class="tech-card" data-category="languages">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <TypescriptIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="languages">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <JavaScriptIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="languages">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <CsharpIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">C#</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="languages">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <PythonIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Python</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="languages">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <HtmlIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">HTML</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="languages">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <CssIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">CSS</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="languages">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <JavaIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Java</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="languages">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <SqlIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">SQL</span>
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------------------------- Databases ---------------------------------------------------------------------------->
+
+          <div class="tech-card hidden" data-category="databases">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <PostgreSQLIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="databases">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <MongoIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="databases">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <MySqlIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">MySql</span>
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------------------------- Cloud & Devops ------------------------------------------------------------------------>
+
+          <div class="tech-card hidden" data-category="cloud-devops">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <DockerIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Docker</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="cloud-devops">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <SupabaseIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Supabase</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="cloud-devops">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <GitActionsIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Github Actions</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="cloud-devops">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <AzureIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Azure</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="cloud-devops">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <GrafanaIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Grafana</span>
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------------------------- Tools & IDEs ------------------------------------------------------------------------>
+
+          <div class="tech-card hidden" data-category="tools-ides">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <PostmanIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">Postman</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="tools-ides">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <GithubIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white">GitHub</span>
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="tools-ides">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <IntellijIdeaIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white whitespace-nowrap"
+                >Intellij Idea</span
+              >
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="tools-ides">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <PycharmIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white whitespace-nowrap"
+                >Pycharm</span
+              >
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="tools-ides">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <VisualStudioIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white whitespace-nowrap"
+                >VS Code</span
+              >
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="tools-ides">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <GitIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white whitespace-nowrap"
+                >Git</span
+              >
+            </div>
+          </div>
+
+          <div class="tech-card hidden" data-category="tools-ides">
+            <div
+              class="bg-[rgba(51,65,85,0.15)] rounded-2xl p-6 flex flex-col items-center justify-center gap-3 hover:bg-slate-600/70 transition-all duration-300 aspect-square"
+            >
+              <div class="w-16 h-16 flex items-center justify-center">
+                <VirtualBoxIcon class="w-full h-full" />
+              </div>
+              <span class="text-sm font-medium text-white whitespace-nowrap"
+                >Virtual Box</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .category-btn {
+    background-color: rgba(71, 85, 105, 0.1);
+    color: #e2e8f0;
+    border: 1px solid rgba(226, 232, 240, 0.2);
+    backdrop-filter: blur(6px);
+  }
+
+  .category-btn:hover {
+    background-color: rgba(250, 204, 21, 0.6);
+  }
+
+  .category-btn.active {
+    background-color: #facc15;
+    color: #1e293b;
+    font-weight: 600;
+  }
+
+  .tech-card {
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .tech-card.hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  // Client-side filtering logic
+  document.addEventListener("DOMContentLoaded", () => {
+    const categoryButtons = document.querySelectorAll(".category-btn");
+    const techCards = document.querySelectorAll(".tech-card");
+
+    categoryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const category = button.getAttribute("data-category");
+
+        // Update active button
+        categoryButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        // Filter tech cards
+        techCards.forEach((card) => {
+          const cardCategory = card.getAttribute("data-category");
+          if (cardCategory === category) {
+            card.classList.remove("hidden");
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+      });
+    });
+  });
+</script>

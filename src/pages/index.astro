@@ -1,0 +1,106 @@
+---
+import SectionContainer from "../components/SectionContainer.astro";
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import SociaPill from "../components/icons/SocialPill.astro";
+import GithubIcon from "../components/icons/Github.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
+import Technologies from '../components/Technologies.astro';
+import Contact from "../components/Contact.astro";
+import ContactIcon from "../components/icons/ContactIcon.astro"
+import TechnologiesIcon from "../components/icons/TechnologiesIcon.astro"
+---
+
+<Layout
+  title="Porfolio de AndresGoGutierrez - Desarrollador y Programador">
+  <main class="px-4 ">
+    <SectionContainer  class="py-4 pb-2">
+      <img
+        class="rounded-full size-50 mb-6"
+        src="https://avatars.githubusercontent.com/u/161991708?v=4"
+        alt="AndresGoGutierrez photo"
+      />
+      <h1 class="text-white text-3xl md>text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+        Hey, soy AndresGoGutierrez <a
+          href="https://linkedin.com/in/andresgogutierrez/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Abierto a nuevas oportunidades</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        Hola, soy Andrés Gómez Gutiérrez, <span class="text-red-100/80"> tecnico en redes y telecomunicaciones</span>, <span class="text-orange-100/80">
+          ingeniero de sistemas
+        </span> y <span class="opacity-80 text-blue-200/80">
+          desarrollador web.
+        </span> De Colombia <span title="Colombia" class="align-middle ml-2">
+          <img
+            src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags/svg/co.svg"
+            alt="Bandera de Colombia"
+            width="24"
+            height="16"
+            style="display:inline-block;vertical-align:middle;"
+          />
+        </span>. Con experiencia en <span class="text-blue-100/80">
+          bases de datos</span>, <span class="text-gray-200/80">
+          administración de servidores
+        </span>
+        y <span class="text-green-100/80"> desarrollo de aplicaciones </span> en
+        Python, Java, C# y JavaScript. Apasionado por la innovación y la entrega
+        de soluciones de alta calidad.
+      </h2>
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SociaPill href="https://linkedin.com/in/andresgogutierrez/">
+          <LinkedInIcon class="size-4 md:size-6" /> LinkedIn
+        </SociaPill>
+        <SociaPill href="https://github.com/AndresGoGutierrez">
+          <GithubIcon class="size-4 md:size-6" /> GitHub
+        </SociaPill>
+
+        <SociaPill href="mailto:andregogutierrezgmail.com">
+          <MailIcon class="size-4 md:size-6" /> andreGoGutierrez@gmail.com
+        </SociaPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia"> 
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
+        <Briefcase class="size-7" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="tecnologias"> 
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
+        <TechnologiesIcon class="size-7" />
+        Tecnologías
+      </h2>
+      <Technologies />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos"> 
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="contacto"> 
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
+        <ContactIcon class="size-7 text-amber-50" />
+        Contacto
+      </h2>
+      <Contact />
+    </SectionContainer>
+
+  </main>
+</Layout>
