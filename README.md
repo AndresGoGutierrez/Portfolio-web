@@ -1,46 +1,98 @@
-# Astro Starter Kit: Basics
+# Personal Portfolio - Andrés Gómez
 
-```sh
-npm create astro@latest -- --template basics
-```
+My personal web portfolio built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).  
+This site showcases my projects, experience, and skills in both **web development** and **backend engineering**.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 👨‍💻 About Me
 
-Inside of your Astro project, you'll see the following folders and files:
+Hi! I’m **Andrés Gómez Gutiérrez**, a **Network and Telecommunications Technician**, **Systems Engineer**, and **Web Developer** from 🇨🇴 **Colombia**.  
+I have experience in **databases**, **server management**, and **application development** using **Python**, **Java**, and **JavaScript**.  
+I’m passionate about **innovation**, **clean design**, and delivering **high-quality software solutions**.
 
-```text
+---
+
+## 🚀 Main Features
+
+- Dynamic **projects section** connected with GitHub  
+- Fully functional **contact form**  
+- Deployed with **Netlify** for performance and reliability
+
+---
+
+## 🧰 Tech Stack
+
+**Frontend:** Astro, Tailwind CSS, HTML, CSS  
+**Design:** Figma  
+**Version Control:** Git, GitHub  
+
+---
+
+## 📂 Project Structure
 /
 ├── public/
-│   └── favicon.svg
+│ └── projects-images
+│ ├── project-art-gallery.webp
+│ ├── project-CodeDev.webp
+│ └── project-replika.webp
 ├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+│ ├── assets
+│ │ └── astro.svg
+│ ├── components
+│ │ ├── Badge.astro
+│ │ ├── Contact.astro
+│ │ ├── Experience.astro
+│ │ ├── ExperienceItem.astro
+│ │ ├── Footer.astro
+│ │ ├── Header.astro
+│ │ ├── LinkButton.astro
+│ │ ├── LinkInline.astro
+│ │ ├── Projects.astro
+│ │ ├── SectionContainer.astro
+│ │ ├── Technologies.astro
+│ │ ├── ThemeToggle.astro
+│ │ └── Welcome.astro
+│ ├── layouts
+│ │ └── Layout.astro
+│ ├── pages
+│ │ └── index.astro
+│ └── styles
+│ └── global.css
 └── package.json
-```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 🖼️ Preview
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+![Portfolio Preview](https://github.com/AndresGoGutierrez/Portfolio-web/blob/c551c6bba211358b64179ff1edb5d1a6d4bbe696/public/projects-images/preview_portfolio.png)
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📅 Project Status
+
+ **In continuous development** - constantly adding new projects and optimizations.
+
+---
+
+## 🔗 Connect with Me
+
+<p align="center">
+  <a href="https://yourdomain.com" target="_blank">
+    <img src="https://img.icons8.com/doodle/48/000000/domain.png" alt="Website"/>
+  </a>
+  <a href="https://linkedin.com/in/andresgogutierrez/" target="_blank" style="margin-left: 15px;">
+    <img src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/AndresGoGutierrez" target="_blank" style="margin-left: 15px;">
+    <img src="https://img.icons8.com/doodle/48/000000/github--v1.png" alt="GitHub"/>
+  </a>
+  <a href="mailto:andregogutierrezgmail.com" target="_blank" style="margin-left: 15px;">
+    <img src="https://img.icons8.com/doodle/48/000000/new-post.png" alt="Email"/>
+  </a>
+</p>
+
+---
+
+
