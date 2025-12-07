@@ -82,7 +82,7 @@ I’m passionate about **innovation**, **clean design**, and delivering **high-q
   <a href="https://portfolioangomez.netlify.app" target="_blank">
     <img src="https://img.icons8.com/doodle/48/000000/domain.png" alt="Website"/>
   </a>
-  <a href="https://linkedin.com/in/andresgogutierrez/" target="_blank" style="margin-left: 15px;">
+  <a href="https://linkedin.com/in/andresgogutierrez" target="_blank" style="margin-left: 15px;">
     <img src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png" alt="LinkedIn"/>
   </a>
   <a href="https://github.com/AndresGoGutierrez" target="_blank" style="margin-left: 15px;">
